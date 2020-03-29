@@ -19,6 +19,22 @@ public class LinkedListTest {
 		linkList.add(4, "phone");
 		System.out.println("After Adding keys and phone " + linkList);
 		
+		LinkedList<String> linkList1 = new LinkedList<String>();
+		linkList1.add("Hey");
+		linkList1.add("Hello");
+		linkList1.add("Pratyu");
+//		linkList1.add("Pencil");
+		System.out.println(linkList1);
+		
+   // iam Trying to add one LinkList to other
+		
+		linkList.addAll(linkList1);
+		System.out.println("After Adding LinkList1 : " + linkList);
+ // Creating SubList
+		List<String> subList = linkList.subList(2, 5);
+		System.out.println("Sublist " + subList);
+	
+		
 	//LinkList.size
 		int size = linkList.size();
 		System.out.println("Size of Linklist : " + size);
